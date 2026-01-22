@@ -1,0 +1,18 @@
+---
+    import {ScrollProgress} from '@/components/ui/scroll-progress'
+    import {AnimatedThemeToggler} from '@/components/ui/animated-theme-toggler'
+---
+
+<header>
+    <div class="max-w-7xl mx-auto p-5">
+        <nav class="grid place-content-center ">
+            <ul class="flex font-semibold text-sm justify-between gap-4 items-center border-gray-200 dark:border-gray-700 border-[1px] py-1 px-10 rounded-2xl my-2 shadow-2xl backdrop-blur-sm">    
+                <li><a class="text-green-500 dark:text-green-400 hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" href="">Projects</a></li>
+                <li><a class="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition duration-300 ease-in-out" href="">Blog</a></li>
+                <li><a class="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition duration-300 ease-in-out" href="">Resume</a></li>
+                <li><AnimatedThemeToggler client:load/></li>
+            </ul>
+        </nav>
+    </div>
+    <ScrollProgress client:load/>
+</header>

@@ -1,0 +1,44 @@
+---
+import {Marquee} from '@/components/ui/marquee'
+import {IconCloud} from '@/components/ui/icon-cloud'
+
+const skills = [
+    'javaScript',
+    'typeScript',
+    'react',
+    'nodedotjs',
+    'python',
+    'django',
+    'graphql',
+    'docker',
+    'azure',
+    'git',
+    'postgresql',
+    'html5',
+    'css3',
+    'tailwindcss',
+    'nextjs',
+    'astro',
+    'vite',
+    'mongodb',
+    'langchain',
+    'openai',
+    'chromadb',
+    'langgraph',
+    'terraform',
+];
+
+const images = skills.map((skill)=> `https://cdn.simpleicons.org/${skill}`)
+    
+---
+
+<div >
+    <h2>Skills</h2>
+    <div class="size-full overflow-hidden flex items-center justify-center my-10">
+        <!-- <Marquee> -->
+            <IconCloud client:load images={images} />
+        <!-- </Marquee> -->
+
+    </div>
+    <!-- <ul class="list-disc list-inside"> -->
+</div>

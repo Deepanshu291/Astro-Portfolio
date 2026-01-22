@@ -1,0 +1,54 @@
+---
+import {Content as AboutContent} from '../md/about.md';
+
+import { getEntry, render } from 'astro:content';
+
+import {IconCloud} from '@/components/ui/icon-cloud'
+
+const skills = [
+    'javaScript',
+    'typeScript',
+    'react',
+    'nodedotjs',
+    'python',
+    'django',
+    'graphql',
+    'docker',
+    'git',
+    'postgresql',
+    'html5',
+    'css3',
+    'tailwindcss',
+    'nextjs',
+    'astro',
+    'vite',
+    'mongodb',
+    'langchain',
+    'openai',
+    'chromadb',
+    'langgraph',
+    'terraform',
+    
+];
+
+const images = skills.map((skill)=> `https://cdn.simpleicons.org/${skill}`)
+ 
+// const about = await getEntry('md', 'about');
+
+// const {Content} = await render(about);
+---
+
+<div class="flex items-center justify-between">
+    <!-- {content} -->
+     <!-- {abd.compiledContent} -->
+     <!-- <Content /> -->
+     <!-- <h2>Skills</h2> -->
+     <div class="w-3/4">
+         <AboutContent />
+     </div>
+     <!-- <div class="overflow-hidden flex items-center justify-center my-10">
+        
+            <IconCloud client:load images={images} />
+           
+        </div> -->
+</div>
