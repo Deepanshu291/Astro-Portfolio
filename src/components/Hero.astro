@@ -1,17 +1,14 @@
 ---
-    import {Button} from '@/components/ui/button'
     import {AuroraText} from './ui/aurora-text'
     import {Meteors} from '@/components/ui/meteors'
-    import {Particles} from '@/components/ui/particles'
     import {TypingAnimation} from '@/components/ui/typing-animation';
-    import {AnimatedThemeToggler} from '@/components/ui/animated-theme-toggler'
-//     import {AnimatedThemeToggler} from '@/components/ui/ui.astro'
-// // import { AnimatedThemeToggler } from './ui/animated-theme-toggler';
+    import {Image} from 'astro:assets'
+    import meImage from '../assets/me.jpg';
 ---
 <!-- <div class="relative h-[500px] w-full overflow-hidden">
   
 </div> -->
-<div class="flex flex-wrap-reverse gap-5 items-center ">
+<div class="flex flex-wrap-reverse gap-5 items-center mb-10 ">
 <Meteors client:load  number={30} minDelay={0.2}/>
 
     
@@ -27,7 +24,9 @@
         <p class="text-gray-700 dark:text-gray-300 text-lg">Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.</p>
         
     </div>
-    <div id="image" class="w-45 h-45 rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"></div>
+    <div id="image" class="w-45 h-45 ">
+        <Image src={meImage} alt="Profile Picture" class="rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"/>
+    </div>
 </div>
 
 
