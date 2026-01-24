@@ -46,7 +46,7 @@ console.log(images);
 
 <div>
     <!-- <h2>Skills</h2> -->
-    <div class="size-full overflow-hidden flex flex-col gap-4 items-center justify-center my-10">
+    <div class="size-full overflow-hidden flex flex-col gap-4 items-center justify-center my-10 py-10 ">
         <!-- <Marquee> -->
             <!-- <IconCloud client:load images={images} /> -->
         <!-- </Marquee> -->
@@ -60,7 +60,7 @@ console.log(images);
                     //     <Image src={skill.url} alt={skill.name} width={28} height={28} class="inline-block mr-2 align-middle"/>
                     //     {skill.name.charAt(0).toUpperCase() + skill.name.slice(1)}
                     // </Badge>
-                    <CustomBadge {...skill} />
+                    <CustomBadge skill={skill} />
                 ))}
             </Marquee>
         </div>
@@ -68,7 +68,7 @@ console.log(images);
         <div class="w-full">
             <Marquee reverse={true} pauseOnHover={true}>
                 {secondHalf.map((skill) => (
-                    <CustomBadge {...skill} />
+                    <CustomBadge skill={skill} />
                 ))}
             </Marquee>
         </div>
