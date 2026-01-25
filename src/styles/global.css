@@ -15,7 +15,8 @@ prose{
 }
 
 .prose h1,
-.prose h2 {
+.prose h2,
+.prose img {
     margin: 0 !important;
     padding: 0 !important;
 }

@@ -1,15 +1,30 @@
 ---
     import {ScrollProgress} from '@/components/ui/scroll-progress'
     import {AnimatedThemeToggler} from '@/components/ui/animated-theme-toggler'
+    import Link from './Link.astro'
+    const currentPath = Astro.url.pathname;
 ---
 
 <header>
     <div class="max-w-7xl mx-auto p-5">
-        <nav class="grid place-content-center ">
+        {currentPath !== '/'&&
+        <h2 class="absolute left-30 top-10 transform -translate-x-1/2">
+           <a href="/"> 
+            Deepanshu Sharma 
+           </a>
+            </h2>
+    }
+        <nav class="grid place-content-center place-items-center">
             <ul class="flex font-semibold text-sm justify-between gap-4 items-center border-gray-200 dark:border-gray-700 border-[1px] py-1 px-10 rounded-2xl my-2 shadow-2xl backdrop-blur-sm">    
-                <li><a class="text-gray-900 dark:text-green-400 hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" href="">Projects</a></li>
-                <li><a class="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition duration-300 ease-in-out" href="">Blog</a></li>
-                <li><a class="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition duration-300 ease-in-out" href="">Resume</a></li>
+                <!-- <Link href="/" title="Home" /> -->
+                <Link href="/projects" title="Projects" />
+                <Link href="/blogs" title="Blogs" />
+                <Link href="/resume" title="Resume" />
+                
+                <!-- <li><a class={`transition duration-300 ease-in-out ${currentPath === '/' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300'}`} href="/">Home</a></li> -->
+                <!-- <li><a class={`transition duration-300 ease-in-out ${currentPath === '/projects' || currentPath === '/projects/' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300'}`} href="/projects">Projects</a></li>
+                <li><a class={`transition duration-300 ease-in-out ${currentPath === '/blogs' || currentPath === '/blogs/' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300'}`} href="/blogs">Blogs</a></li>
+                <li><a class="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 transition duration-300 ease-in-out" href="">Resume</a></li> -->
                 <li><AnimatedThemeToggler client:load/></li>
             </ul>
         </nav>
