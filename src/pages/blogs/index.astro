@@ -1,35 +1,32 @@
 ---
 import Layout from '@/layouts/BaseLayout.astro';
 import {BlogCard} from '@/components/ui/blogcard'
+import {getCollection} from 'astro:content';
 
-const posts = Object.values(import.meta.glob('@/content/blogs/*.md', {eager:true}))
+// const posts = Object.values(import.meta.glob('@/content/blogs/*.md', {eager:true}))
+const posts = await  getCollection('blog');
+
 ---
 
 <Layout title="Blogs" heading="My Thoughts and Writings" description="Explore my collection of blog posts where I share insights, tutorials, and experiences on web development, programming, and technology."> 
     <!-- <div class="flex flex-col items-center justify-center w-full py-10 px-5 ">
         <p class="text-center text-lg text-muted-foreground">Blog section is under construction. Stay tuned for updates!</p>
     </div> -->
+    <div class="grid grid-cols-1 gap-3 mb-10">
     {
-        posts.map((post: any)=>(
-            <li>{post.frontmatter.title}</li>
-            // <BlogCard data={{
-            //     title: post.frontmatter.title,
-            //     // dates: post.frontmatter.date,
-            //     // readtime: post.frontmatter.readtime,
-            //     // description: post.frontmatter.description,
-            //     // // imageUrl: post.frontmatter.imageUrl,
-            //     // projectUrl:`/blogs/${post.slug}`,
-            //     // technologies: post.frontmatter.technologies
-            //     }}/>
+        posts.map((post)=>(
+            <BlogCard 
+                data={{
+                    title: post.data.title,
+                    pubDate: post.data.pubDate,
+                    readtime: post.data.readtime!,
+                    description: post.data.description!,
+                    heroImage: post.data.heroImage,
+                    projectUrl: `/blogs/${post.id}`,
+                    tags: post.data.tags,
+                }}
+            />
         ))
     }
-    <BlogCard data={{
-        title: "Understanding Astro: A Beginner's Guide",
-        pubdate: "March 15, 2024",
-        readtime: "5 min read",
-        description: "An introductory guide to Astro, covering its features, benefits, and how to get started with building fast, modern websites.",
-        imageUrl: "https://avatar.vercel.sh/astroblog1",
-        projectUrl:"",
-        tags: ["Astro", "JavaScript", "Web Development"]
-        }}/>
+    </div>
 </Layout>

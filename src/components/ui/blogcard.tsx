@@ -25,12 +25,12 @@ export  function BlogCard({data}: {data: BlogCardProps}) {
             <CardHeader>
                 <div className="flex gap-2 justify-start items-center text-xs">
 
-                <CardDescription className="text-xs"> {data.pubdate}</CardDescription>
+                <CardDescription className="text-xs"> {data.pubDate}</CardDescription>
                 <div className="border border-buffer border-neutral-300 bg-muted-foreground w-1 h-1 rounded-full"></div>
                 <CardDescription className="text-xs">{data.readtime}</CardDescription>
                 </div>
                 <CardTitle className="flex w-full justify-between items-center gap-2">{data.title}  
-                   <a href={data.projectUrl} target="_blank" rel="noreferrer">
+                   <a href={data.projectUrl} rel="noreferrer">
                     <ArrowUpRight className="dark:bg-amber-500 dark:rounded-full" color="#000"/>  
                    </a>
                 </CardTitle>

@@ -17,10 +17,10 @@ export interface ProjectCardProps {
 
 export interface BlogCardProps {
   title: string;
-  pubdate: string;
+  pubDate: string;
   readtime: string;
   description: string;
-  imageUrl?: string;
+  heroImage?: string;
   projectUrl?: string;
   tags?: string[];
 }

@@ -4,15 +4,16 @@ import {glob} from 'astro/loaders'
 import { z } from 'astro/zod';
 
 const blogcollection = defineCollection({
+    loader: glob({pattern: '**/*.md', base: './src/content/blogs'}),
     schema:z.object({
         title:z.string(),
         description:z.string().optional(),
-        pubdate:z.string().refine((date) => !isNaN(Date.parse(date)), {
+        pubDate:z.string().refine((date) => !isNaN(Date.parse(date)), {
             message: "Invalid date format",
         }),
         tags:z.array(z.string()).optional(),
         readtime:z.string().optional(),
-        imageUrl:z.string().optional(),
+        heroImage:z.string().optional(),
     })
 })
 

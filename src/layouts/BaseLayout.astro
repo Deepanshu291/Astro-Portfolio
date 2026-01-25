@@ -19,10 +19,12 @@ const props = Astro.props;
 	<body class="bg-gray-50  dark:bg-neutral-950 ">
 		<Header />
 		<main class="mx-auto max-w-[90vw] prose  dark:prose-invert px-5 lg:max-w-[45vw]   min-h-[60vh]" >
+			{title!= 'Blog' &&
 			<div class="relative text-center flex-col w-full h-10 mb-10 "> 
         <Badge className="mb-2 " >{title}</Badge>
         <div class="border-t  border-2 border-gray-950  my-2"></div>
-    </div>
+    	</div>
+			}
     <div class=" flex flex-col justify-center items-center text-center space-y-4">
     <!-- <h1>Things I’ve Built</h1>
     <p class="w-2/3">These projects reflect my passion for crafting high-quality web experiences, tackling challenges, and learning along the way.</p> -->
