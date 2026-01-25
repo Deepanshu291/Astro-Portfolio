@@ -1,0 +1,390 @@
+# ============================================
+# COMPLETE PROFILE CONFIGURATION
+# ============================================
+# This file contains all portfolio data including personal info, 
+# work experience, skills, projects, and social links
+
+# ============================================
+# PERSONAL INFORMATION
+# ============================================
+profile:
+  name: "Deepanshu Sharma"
+  title: "Deepanshu Sharma"
+  greeting: "Hi, I'm"
+  tagline: "Software Engineer turned Entrepreneur"
+  description: "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter."
+  email: "deepanshu@example.com"
+  location: "India"
+  
+  # Professional roles
+  roles:
+    - "Fullstack Developer 🚀"
+    - "GenAI Developer 🔨"
+  
+  # Profile image
+  image:
+    src: "../assets/me.jpg"
+    alt: "Profile Picture"
+    classes: "rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"
+
+# ============================================
+# SOCIAL LINKS
+# ============================================
+social:
+  - name: "GitHub"
+    url: "https://github.com/Deepanshu291"
+    icon: "github"
+    username: "@Deepanshu291"
+  
+  - name: "LinkedIn"
+    url: "https://linkedin.com/in/deepanshu-sharma"
+    icon: "linkedin"
+    username: "deepanshu-sharma"
+  
+  - name: "Twitter"
+    url: "https://twitter.com/deepanshu291"
+    icon: "twitter"
+    username: "@deepanshu291"
+  
+  - name: "Email"
+    url: "mailto:deepanshu@example.com"
+    icon: "mail"
+    username: "deepanshu@example.com"
+
+# ============================================
+# ABOUT / BIO
+# ============================================
+about:
+  heading: "About Me"
+  paragraphs:
+    - "I'm a passionate Full Stack Developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I love creating seamless user experiences and robust server-side solutions."
+    - "Currently focused on GenAI development, exploring the intersection of artificial intelligence and web development. I enjoy working with cutting-edge technologies and staying up-to-date with the latest industry trends."
+    - "When I'm not coding, you can find me sharing knowledge on Twitter, contributing to open-source projects, or experimenting with new frameworks and tools."
+
+# ============================================
+# WORK EXPERIENCE
+# ============================================
+experience:
+  heading: "Work Experience"
+  
+  jobs:
+    - company: "Tech Solutions Inc."
+      position: "Software Engineer"
+      location: "Remote"
+      startDate: "June 2023"
+      endDate: "Present"
+      current: true
+      status: "active" # active, completed
+      description: "Developing and maintaining web applications using modern frameworks and technologies. Collaborating with cross-functional teams to deliver high-quality software solutions."
+      responsibilities:
+        - "Led development of scalable web applications using React and Node.js"
+        - "Implemented CI/CD pipelines reducing deployment time by 40%"
+        - "Mentored junior developers and conducted code reviews"
+        - "Collaborated with product teams to define technical requirements"
+      technologies:
+        - "React"
+        - "TypeScript"
+        - "Node.js"
+        - "PostgreSQL"
+        - "Docker"
+        - "AWS"
+      highlights:
+        - "Increased application performance by 35%"
+        - "Successfully delivered 5+ major features"
+    
+    - company: "StartUp Ventures"
+      position: "Full Stack Developer"
+      location: "Hybrid"
+      startDate: "January 2022"
+      endDate: "May 2023"
+      current: false
+      status: "completed"
+      description: "Built and maintained multiple client projects focusing on e-commerce and SaaS platforms. Worked directly with clients to understand requirements and deliver solutions."
+      responsibilities:
+        - "Developed RESTful APIs using Node.js and Express"
+        - "Created responsive frontend applications with React"
+        - "Designed and optimized database schemas"
+        - "Implemented authentication and authorization systems"
+      technologies:
+        - "React"
+        - "Next.js"
+        - "Express"
+        - "MongoDB"
+        - "TailwindCSS"
+      highlights:
+        - "Built 3 production-ready applications"
+        - "Improved client satisfaction score to 95%"
+    
+    - company: "Digital Agency Co."
+      position: "Frontend Developer"
+      location: "On-site"
+      startDate: "June 2020"
+      endDate: "December 2021"
+      current: false
+      status: "completed"
+      description: "Specialized in creating beautiful and performant user interfaces. Worked closely with designers to implement pixel-perfect designs."
+      responsibilities:
+        - "Developed responsive web applications"
+        - "Optimized frontend performance and accessibility"
+        - "Integrated third-party APIs and services"
+        - "Maintained code quality through testing and reviews"
+      technologies:
+        - "JavaScript"
+        - "React"
+        - "HTML5"
+        - "CSS3"
+        - "SASS"
+      highlights:
+        - "Reduced page load time by 50%"
+        - "Achieved 100% accessibility scores"
+
+# ============================================
+# SKILLS & TECHNOLOGIES
+# ============================================
+skills:
+  heading: "Skills & Technologies"
+  
+  categories:
+    - category: "Frontend"
+      items:
+        - name: "JavaScript"
+          icon: "javascript"
+          level: "expert"
+        - name: "TypeScript"
+          icon: "typescript"
+          level: "expert"
+        - name: "React"
+          icon: "react"
+          level: "expert"
+        - name: "Next.js"
+          icon: "nextdotjs"
+          level: "advanced"
+        - name: "Astro"
+          icon: "astro"
+          level: "advanced"
+        - name: "HTML5"
+          icon: "html5"
+          level: "expert"
+        - name: "CSS3"
+          icon: "css3"
+          level: "expert"
+        - name: "TailwindCSS"
+          icon: "tailwindcss"
+          level: "expert"
+        - name: "Vite"
+          icon: "vite"
+          level: "advanced"
+    
+    - category: "Backend"
+      items:
+        - name: "Node.js"
+          icon: "nodedotjs"
+          level: "expert"
+        - name: "Python"
+          icon: "python"
+          level: "advanced"
+        - name: "Django"
+          icon: "django"
+          level: "intermediate"
+        - name: "GraphQL"
+          icon: "graphql"
+          level: "advanced"
+    
+    - category: "Database"
+      items:
+        - name: "PostgreSQL"
+          icon: "postgresql"
+          level: "advanced"
+        - name: "MongoDB"
+          icon: "mongodb"
+          level: "advanced"
+        - name: "ChromaDB"
+          icon: "chromadb"
+          level: "intermediate"
+    
+    - category: "AI & ML"
+      items:
+        - name: "LangChain"
+          icon: "langchain"
+          level: "advanced"
+        - name: "OpenAI"
+          icon: "openai"
+          level: "advanced"
+        - name: "LangGraph"
+          icon: "langgraph"
+          level: "intermediate"
+    
+    - category: "DevOps & Tools"
+      items:
+        - name: "Docker"
+          icon: "docker"
+          level: "advanced"
+        - name: "Git"
+          icon: "git"
+          level: "expert"
+        - name: "Azure"
+          icon: "azure"
+          level: "intermediate"
+        - name: "Terraform"
+          icon: "terraform"
+          level: "intermediate"
+
+  # Flat list for icon cloud display
+  all_icons:
+    - "javascript"
+    - "typescript"
+    - "react"
+    - "nodedotjs"
+    - "python"
+    - "django"
+    - "graphql"
+    - "docker"
+    - "azure"
+    - "git"
+    - "postgresql"
+    - "html5"
+    - "css3"
+    - "tailwindcss"
+    - "nextdotjs"
+    - "astro"
+    - "vite"
+    - "mongodb"
+    - "langchain"
+    - "openai"
+    - "chromadb"
+    - "langgraph"
+    - "terraform"
+
+# ============================================
+# PROJECTS
+# ============================================
+projects:
+  heading: "Things I've Built"
+  description: "These projects reflect my passion for crafting high-quality web experiences, tackling challenges, and learning along the way."
+  
+  items:
+    - title: "AI-Powered Chatbot"
+      dates: "Jan 2024 - Apr 2024"
+      sourceUrl: "https://github.com/Deepanshu291/Astro-Portfolio"
+      projectUrl: ""
+      imageUrl: "https://avatar.vercel.sh/shadcn1"
+      description: "An AI-powered chatbot that leverages natural language processing to provide intelligent responses and assist users in various tasks."
+      featured: true
+      status: "completed"
+      technologies:
+        - "React"
+        - "TypeScript"
+        - "TailwindCSS"
+        - "Shadcn"
+        - "OpenAI"
+        - "Python"
+        - "Astro"
+      highlights:
+        - "Integrated OpenAI GPT-4 for natural conversations"
+        - "Built custom UI with React and TailwindCSS"
+        - "Deployed with 99.9% uptime"
+    
+    - title: "E-commerce Platform"
+      dates: "May 2023 - Dec 2023"
+      sourceUrl: ""
+      projectUrl: ""
+      imageUrl: "https://avatar.vercel.sh/shadcn2"
+      description: "A scalable e-commerce platform that offers a seamless shopping experience with features like product catalog, shopping cart, and secure payment integration."
+      featured: true
+      status: "completed"
+      technologies:
+        - "Next.js"
+        - "GraphQL"
+        - "Stripe"
+        - "Docker"
+        - "PostgreSQL"
+      highlights:
+        - "Processed over $100K in transactions"
+        - "Implemented real-time inventory management"
+        - "Achieved sub-second page load times"
+    
+    - title: "Social Media App"
+      dates: "Feb 2023 - Nov 2023"
+      sourceUrl: ""
+      projectUrl: ""
+      imageUrl: "https://avatar.vercel.sh/shadcn4"
+      description: "A social media application that allows users to connect, share content, and engage with a vibrant community through features like posts, comments, and likes."
+      featured: true
+      status: "completed"
+      technologies:
+        - "React Native"
+        - "Firebase"
+        - "Redux"
+        - "Expo"
+      highlights:
+        - "Gained 1000+ active users in first month"
+        - "Implemented real-time messaging"
+        - "Cross-platform iOS and Android support"
+    
+    - title: "Portfolio Website"
+      dates: "Dec 2023 - Jan 2024"
+      sourceUrl: "https://github.com/Deepanshu291/Astro-Portfolio"
+      projectUrl: ""
+      imageUrl: "https://avatar.vercel.sh/portfolio"
+      description: "A modern, performant portfolio website built with Astro, featuring dynamic content, beautiful animations, and excellent SEO."
+      featured: false
+      status: "completed"
+      technologies:
+        - "Astro"
+        - "React"
+        - "TailwindCSS"
+        - "TypeScript"
+      highlights:
+        - "100/100 Lighthouse score"
+        - "Built with latest Astro features"
+        - "Fully responsive design"
+
+# ============================================
+# CALL TO ACTION
+# ============================================
+cta:
+  label: "View My Work"
+  url: "/projects"
+  enabled: false
+
+# ============================================
+# ANIMATION SETTINGS
+# ============================================
+animations:
+  meteors:
+    enabled: true
+    number: 20
+    minDelay: 0.2
+  
+  typing:
+    loop: true
+    speed: 100
+  
+  theme:
+    transitionDuration: 300
+
+# ============================================
+# SEO & META
+# ============================================
+seo:
+  title: "Deepanshu Sharma - Full Stack Developer"
+  description: "Software Engineer turned Entrepreneur specializing in Full Stack Development and GenAI. Building beautiful and functional web experiences."
+  keywords:
+    - "Full Stack Developer"
+    - "GenAI Developer"
+    - "React Developer"
+    - "Node.js Developer"
+    - "Web Development"
+    - "Software Engineer"
+  ogImage: "/images/og-image.jpg"
+  twitterCard: "summary_large_image"
+
+# ============================================
+# CONTACT
+# ============================================
+contact:
+  heading: "Get In Touch"
+  description: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision."
+  email: "deepanshu@example.com"
+  availability: "Available for freelance work"
+  responseTime: "Usually responds within 24 hours"

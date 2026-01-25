@@ -2,39 +2,30 @@
 import Layout from "@/layouts/BaseLayout.astro";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from '@/components/ui/projectcard'
-import type {ProjectCardProps} from '@/lib/utils'
+import { getEntry } from "astro:content";
+
+const projects = await getEntry('projects', 'projects');
+const {title, description, heading, projects: pr} = projects?.data || {};
+console.log(projects);
 ---
 
-<Layout title="Projects" heading="Things I’ve Built" description="These projects reflect my passion for crafting high-quality web experiences, tackling challenges, and learning along the way."> 
+<Layout title={`${title}`} heading={heading} description={description}> 
     
 
     <div class="flex flex-wrap gap-5 item-center justify-center  w-full py-10 px-1 ">
-     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 w-full"> -->
-        <ProjectCard data={{
-            title: "AI-Powered Chatbot",
-            dates: "Jan 2024 - Apr 2024",
-            sourceUrl: "https://github.com/Deepanshu291/Astro-Portfolio/blob/master/src/components/Skills.astro",
-            description: "An AI-powered chatbot that leverages natural language processing to provide intelligent responses and assist users in various tasks.",
-            imageUrl: "https://avatar.vercel.sh/shadcn1",
-            projectUrl:"",
-            technologies: ["React", "TypeScript", "TailwindCSS", "Shadcdn", "OpenAI", "Python", "Astro"]
-            }}/>
-        <ProjectCard data={{
-            title: "E-commerce Platform",
-            dates: "May 2023 - Dec 2023",
-            description: "A scalable e-commerce platform that offers a seamless shopping experience with features like product catalog, shopping cart, and secure payment integration.",
-            imageUrl: "https://avatar.vercel.sh/shadcn2",
-            projectUrl:"",
-            technologies: ["Next.js", "GraphQL", "Stripe", "Docker", "PostgreSQL"]
-            }}/>
-
-        <ProjectCard data={{
-            title: "Social Media App",
-            dates: "Feb 2023 - Nov 2023",
-            description: "A social media application that allows users to connect, share content, and engage with a vibrant community through features like posts, comments, and likes.",
-            imageUrl: "https://avatar.vercel.sh/shadcn4",
-            projectUrl:"",
-            technologies: ["React Native", "Firebase", "Redux", "Expo"]
-            }}/>
+        {
+            pr?.map((project) => (
+                <ProjectCard data={{
+                    title: project.title,
+                    dates: project.dates || " ",
+                    sourceUrl: project.sourceUrl,
+                    description: project!.description || " ",
+                    imageUrl: project?.imageUrl || "https://avatar.vercel.sh/shadcn1",
+                    projectUrl: project.projectUrl,
+                    technologies: project?.techStack || []
+                }}/>
+            ))
+        }
+        
     </div>
 </Layout>

@@ -4,7 +4,15 @@
     import {TypingAnimation} from '@/components/ui/typing-animation';
     import {Image} from 'astro:assets'
     import meImage from '../assets/me.jpg';
+    import {getEntry , getCollection} from 'astro:content'
+
+const profile = await getEntry('profile', 'profile');
+// const profileCollection = await getCollection('profile');
+// console.log("data collection "+ profileCollection[0]?.data);
+// const {} = profile;
+console.log("data "+profile?.data);
 ---
+
 <!-- <div class="relative h-[500px] w-full overflow-hidden">
   
 </div> -->
@@ -13,19 +21,22 @@
 
     
     <div class="flex flex-col my-5 flex-2">
-        <h1 class="text-4xl font-bold  dark:text-neutral-100" >Hi, I'm 
+
+        <h1 class="text-4xl font-bold  dark:text-neutral-100" >{profile?.data.profile.greeting}
             <br> 
-            <AuroraText> Deepanshu Sharma</AuroraText>
+            <AuroraText>{profile?.data.profile.name}</AuroraText>
         </h1>
         <h2 class="dark:text-neutral-200">
-            <TypingAnimation client:load  words={['Fullstack Developer 🚀', 'GenAI Developer 🔨']} loop  />
+            <TypingAnimation client:load  words={profile?.data.profile.roles} loop  />
         
         </h2>
-        <p class=" text-gray-700 dark:text-gray-300 text-lg">Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.</p>
+        <p class=" text-gray-700 dark:text-gray-300 text-lg">{profile?.data.profile.description}</p>
         
     </div>
     <div id="image" class="flex-1 w-45 h-45 flex justify-center items-center">
-        <Image src={meImage} alt="Profile Picture" class="rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"/>
+        {profile?.data.profile.image.src && (
+            <Image src={profile.data.profile.image.src} alt="Profile Picture" width={200} height={200} class="rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"/>
+        )}
     </div>
 </div>
 

@@ -1,0 +1,43 @@
+profile:
+  name: "Deepanshu Sharma"
+  title: "Deepanshu Sharma"
+  greeting: "Hi, I'm"
+  tagline: "Software Engineer turned Entrepreneur"
+  description: "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter."
+  email: "deepanshu@example.com"
+  location: "India"
+  
+  # Professional roles
+  roles:
+    - "Fullstack Developer 🚀"
+    - "GenAI Developer 🔨"
+    - "Tech Enthusiast 💡"
+  
+  # Profile image
+  image:
+    src: "https://github.com/Deepanshu291/Astro-Portfolio/blob/master/src/assets/me.jpg"
+
+  skills:
+    - "javaScript"
+    - "typeScript"
+    - "react"
+    - "nodedotjs"
+    - "python"
+    - "django"
+    - "graphql"
+    - "docker"
+    - "azure"
+    - "git"
+    - "postgresql"
+    - "html5"
+    - "css"
+    - "tailwindcss"
+    - "next.js"
+    - "astro"
+    - "vite"
+    - "mongodb"
+    - "langchain"
+    - "openai"
+    - "chromadb"
+    - "langgraph"
+    - "terraform"

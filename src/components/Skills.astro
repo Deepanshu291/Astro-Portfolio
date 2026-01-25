@@ -1,46 +1,21 @@
 ---
 import {Marquee} from '@/components/ui/marquee'
-import {IconCloud} from '@/components/ui/icon-cloud'
-import {Badge} from '@/components/ui/badge'
-import Image from 'astro/components/Image.astro';
-import {ShineBorder} from '@/components/ui/shine-border'
 import {CustomBadge} from '@/components/ui/CustomBadge'
+import {getEntry} from 'astro:content'
 
-const skills = [
-    'javaScript',
-    'typeScript',
-    'react',
-    'nodedotjs',
-    'python',
-    'django',
-    'graphql',
-    'docker',
-    'azure',
-    'git',
-    'postgresql',
-    'html5',
-    'css',
-    'tailwindcss',
-    'next.js',
-    'astro',
-    'vite',
-    'mongodb',
-    'langchain',
-    'openai',
-    'chromadb',
-    'langgraph',
-    'terraform',
-];
 
+const profile = await getEntry('profile', 'profile');
+const skills = profile?.data.profile.skills;
+// console.log("skills "+ skills);
 // const images = skills.map((skill)=> `https://cdn.simpleicons.org/${skill}`)
-const images = skills.map(
+const images = skills?.map(
   (skill) => ({'url': `https://cdn.simpleicons.org/${skill}`,
             'name':skill})
 );
-const halfIndex = Math.ceil(skills.length / 2);
-const firstHalf = images.slice(0, halfIndex);
-const secondHalf = images.slice(halfIndex);
-console.log(images);
+const halfIndex = Math.ceil(skills!.length / 2);
+const firstHalf = images?.slice(0, halfIndex);
+const secondHalf = images?.slice(halfIndex);
+// console.log(images);
 
 ---
 
@@ -48,18 +23,10 @@ console.log(images);
     <!-- <h2>Skills</h2> -->
     <div class="size-full overflow-hidden flex flex-col gap-4 items-center justify-center my-10 py-10 ">
         <!-- <Marquee> -->
-            <!-- <IconCloud client:load images={images} /> -->
         <!-- </Marquee> -->
         <div class="w-full">
             <Marquee pauseOnHover={true}>
-                {firstHalf.map((skill) => (
-                    
-                    // <Badge variant={"outline"} className="relative text-sm px-7 py-4 h-10 w-40 rounded-full  mx-2 bg-card">
-                       
-                    //     <ShineBorder  borderWidth={2} shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />                
-                    //     <Image src={skill.url} alt={skill.name} width={28} height={28} class="inline-block mr-2 align-middle"/>
-                    //     {skill.name.charAt(0).toUpperCase() + skill.name.slice(1)}
-                    // </Badge>
+                {firstHalf?.map((skill) => (
                     <CustomBadge skill={skill} />
                 ))}
             </Marquee>
@@ -67,11 +34,10 @@ console.log(images);
         <slot />
         <div class="w-full">
             <Marquee reverse={true} pauseOnHover={true}>
-                {secondHalf.map((skill) => (
+                {secondHalf?.map((skill) => (
                     <CustomBadge skill={skill} />
                 ))}
             </Marquee>
         </div>
     </div>
-    <!-- <ul class="list-disc list-inside"> -->
 </div>

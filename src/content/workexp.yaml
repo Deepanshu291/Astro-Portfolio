@@ -1,0 +1,71 @@
+
+# ============================================
+# WORK EXPERIENCE
+# ============================================
+experience:
+  heading: "Work Experience"
+  
+  jobs:
+    - company: "Tech Solutions Inc."
+      position: "Software Engineer"
+      location: "Remote"
+      startDate: "June 2023"
+      endDate: "Present"
+      description: "Developing and maintaining web applications using modern frameworks and technologies. Collaborating with cross-functional teams to deliver high-quality software solutions."
+      responsibilities:
+        - "Led development of scalable web applications using React and Node.js"
+        - "Implemented CI/CD pipelines reducing deployment time by 40%"
+        - "Mentored junior developers and conducted code reviews"
+        - "Collaborated with product teams to define technical requirements"
+      techStack:
+        - "React"
+        - "TypeScript"
+        - "Node.js"
+        - "PostgreSQL"
+        - "Docker"
+        - "AWS"
+      highlights:
+        - "Increased application performance by 35%"
+        - "Successfully delivered 5+ major features"
+    
+    - company: "StartUp Ventures"
+      position: "Full Stack Developer"
+      location: "Hybrid"
+      startDate: "January 2022"
+      endDate: "May 2023"
+      description: "Built and maintained multiple client projects focusing on e-commerce and SaaS platforms. Worked directly with clients to understand requirements and deliver solutions."
+      responsibilities:
+        - "Developed RESTful APIs using Node.js and Express"
+        - "Created responsive frontend applications with React"
+        - "Designed and optimized database schemas"
+        - "Implemented authentication and authorization systems"
+      techStack:
+        - "React"
+        - "Next.js"
+        - "Express"
+        - "MongoDB"
+        - "TailwindCSS"
+      highlights:
+        - "Built 3 production-ready applications"
+        - "Improved client satisfaction score to 95%"
+    
+    - company: "Digital Agency Co."
+      position: "Frontend Developer"
+      location: "On-site"
+      startDate: "June 2020"
+      endDate: "December 2021"
+      description: "Specialized in creating beautiful and performant user interfaces. Worked closely with designers to implement pixel-perfect designs."
+      responsibilities:
+        - "Developed responsive web applications"
+        - "Optimized frontend performance and accessibility"
+        - "Integrated third-party APIs and services"
+        - "Maintained code quality through testing and reviews"
+      techStack:
+        - "JavaScript"
+        - "React"
+        - "HTML5"
+        - "CSS3"
+        - "SASS"
+      highlights:
+        - "Reduced page load time by 50%"
+        - "Achieved 100% accessibility scores"
