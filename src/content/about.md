@@ -1,3 +1,11 @@
-## About
+## About Me
 
-At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, I pursued a double degree in computer science and business, interned at big tech companies in Silicon Valley, and competed in over 21 hackathons for fun. I also had the pleasure of being a part of the first ever in-person cohort of buildspace called buildspace sf1.
+<!-- ## Hey, I'm Deepanshu Sharma -->
+
+I’m from **Delhi, India**, and I began my journey in **2019**, learning the basics of web development with **HTML** and **CSS**. In **2020**, I started exploring **Flutter**, built several projects, and worked as a **freelancer until 2023**, contributing to startups and interning to share and grow my skills in **React, Next.js, and Full Stack development**.  
+
+Since **2023**, I have been deeply exploring **GenAI**, owning projects where I built and **fine-tuned LLMs and SLMs** using **Unsloth, TRL, and SFT techniques**, creating AI-powered tools, agents, and workflows with **LangChain, LangGraph, n8n, OpenAI, ChromaDB, and Streamlit**.  
+
+Currently, at **Tata Consultancy Services (TCS)**, I work with **Azure, Terraform, Azure AI Foundry, and Azure DevOps**, applying these tools daily to design and deploy **scalable AI-driven solutions**.  
+
+I’m passionate about **AI and web technologies**, motivated by challenges, and love building **innovative and impactful applications**. My goal is to continue growing as a **GenAI developer**, exploring the frontiers of AI, and contributing to projects that **inspire, innovate, and make a difference**.

@@ -1,17 +1,25 @@
 profile:
   name: "Deepanshu Sharma"
-  title: "Deepanshu Sharma"
+  title: "Full Stack Developer | GenAI & Data Engineer"
   greeting: "Hi, I'm"
-  tagline: "Software Engineer turned Entrepreneur"
-  description: "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter."
-  email: "deepanshu@example.com"
-  location: "India"
+  tagline: "Full Stack, GenAI & Data Engineer building AI agents with LangGraph & n8n"
+  description: >
+              who enjoys building clean,
+              scalable, and user-focused web applications.
+              I’ve worked on AI-powered products, real-time web platforms, and modern full-stack
+              applications, and I’m currently exploring GenAI and web technologies at TCS.
+  email: "deepanshu2912001@gmail.com"
+  location: "Delhi, India"
   
   # Professional roles
   roles:
-    - "Fullstack Developer 🚀"
-    - "GenAI Developer 🔨"
-    - "Tech Enthusiast 💡"
+    - "Full Stack Developer 🚀"
+    - "GenAI Developer 🤖"
+    - "AI Agent Builder (LangGraph & n8n) 🧠"
+    - "Data Engineer 📊"
+    - "Flutter Developer 📱"
+    - "Backend Engineer ⚙️"
+    - "Tech Problem Solver 💡"
   
   # Profile image
   image: "https://raw.githubusercontent.com/Deepanshu291/Astro-Portfolio/refs/heads/master/src/assets/me.jpg"
@@ -23,22 +31,17 @@ profile:
       username: "@Deepanshu291"
     
     - name: "LinkedIn"
-      url: "https://linkedin.com/in/deepanshu-sharma"
+      url: "https://linkedin.com/in/deepanshu291"
       icon: "linkedin"
-      username: "deepanshu-sharma"
-    
-    - name: "Twitter"
-      url: "https://twitter.com/deepanshu291"
-      icon: "x"
-      username: "@deepanshu291"
+      username: "deepanshu291"
     
     - name: "Email"
-      url: "mailto:deepanshu@example.com"
-      icon: "instagram"
-      username: "deepanshu@example.com"
-
+      url: "mailto:deepanshu2912001@gmail.com"
+      icon: "mail"
+      username: "deepanshu2912001@gmail.com"
 
   skills:
+    # ---- original skills (unchanged) ----
     - "javaScript"
     - "typeScript"
     - "react"
@@ -62,3 +65,19 @@ profile:
     - "chromadb"
     - "langgraph"
     - "terraform"
+
+    # ---- added skills from resume + AI agents ----
+    - "n8n"
+    - "flutter"
+    - "dart"
+    - "socketdotio"
+    - "firebase"
+    - "appwrite"
+    - "riverpod"
+    - "streamlit"
+    - "llm"
+    - "crewai"
+    - "vscode"
+    - "Java"
+    - "c"
+    - "cplusplus"
