@@ -4,7 +4,6 @@ import {Badge} from '@/components/ui/badge'
 import {getEntry} from 'astro:content';
 
 const workexp = await getEntry('experience', 'workexp');
-console.log(workexp);
 
 const {heading, jobs} = workexp?.data.experience || {}
 

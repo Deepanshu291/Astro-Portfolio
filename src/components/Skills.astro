@@ -14,7 +14,9 @@ const images = skills?.map(
 );
 const halfIndex = Math.ceil(skills!.length / 2);
 const firstHalf = images?.slice(0, halfIndex);
+console.log(firstHalf?.length);
 const secondHalf = images?.slice(halfIndex);
+console.log(secondHalf?.length);
 // console.log(images);
 
 ---
@@ -25,7 +27,7 @@ const secondHalf = images?.slice(halfIndex);
         <!-- <Marquee> -->
         <!-- </Marquee> -->
         <div class="w-full">
-            <Marquee pauseOnHover={true}>
+            <Marquee className="min-h-14" pauseOnHover={true}>
                 {firstHalf?.map((skill) => (
                     <CustomBadge skill={skill} />
                 ))}
@@ -33,7 +35,7 @@ const secondHalf = images?.slice(halfIndex);
         </div>
         <slot />
         <div class="w-full">
-            <Marquee reverse={true} pauseOnHover={true}>
+            <Marquee className="min-h-14" reverse={true} pauseOnHover={true}>
                 {secondHalf?.map((skill) => (
                     <CustomBadge skill={skill} />
                 ))}
