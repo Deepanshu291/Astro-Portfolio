@@ -15,11 +15,9 @@ profile:
   roles:
     - "Full Stack Developer 🚀"
     - "GenAI Developer 🤖"
-    - "AI Agent Builder (LangGraph & n8n) 🧠"
     - "Data Engineer 📊"
     - "Flutter Developer 📱"
-    - "Backend Engineer ⚙️"
-    - "Tech Problem Solver 💡"
+    - "Tech Enthusiast 🌐"
   
   # Profile image
   image: "https://raw.githubusercontent.com/Deepanshu291/Astro-Portfolio/refs/heads/master/src/assets/me.jpg"
