@@ -6,8 +6,8 @@ import type {ProjectCardProps} from '@/lib/utils'
 
 
 export  function ProjectCard({data}: {data: ProjectCardProps}) {
-  return (
-    <Card className="  w-80 relative pb-5 min-h-[45vh]" >
+    return (
+        <Card className="relative w-full pb-5 min-h-[45vh]" >
         <div>
 
             <img
