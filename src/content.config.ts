@@ -29,9 +29,13 @@ const profiledata = defineCollection({
             email: z.string().email(),
             location: z.string(),
             roles: z.array(z.string()),
-            image: z.object({
-                src: z.string(),
-            }),
+            image: z.string().optional(),
+            social: z.array(z.object({
+                name: z.string(),
+                url: z.string().url(),
+                icon: z.string(),
+                username: z.string().optional(),
+            })),
             skills: z.array(z.string()),
         }),
     }),

@@ -14,8 +14,29 @@ profile:
     - "Tech Enthusiast 💡"
   
   # Profile image
-  image:
-    src: "https://github.com/Deepanshu291/Astro-Portfolio/blob/master/src/assets/me.jpg"
+  image: "https://raw.githubusercontent.com/Deepanshu291/Astro-Portfolio/refs/heads/master/src/assets/me.jpg"
+
+  social:
+    - name: "GitHub"
+      url: "https://github.com/Deepanshu291"
+      icon: "github"
+      username: "@Deepanshu291"
+    
+    - name: "LinkedIn"
+      url: "https://linkedin.com/in/deepanshu-sharma"
+      icon: "linkedin"
+      username: "deepanshu-sharma"
+    
+    - name: "Twitter"
+      url: "https://twitter.com/deepanshu291"
+      icon: "x"
+      username: "@deepanshu291"
+    
+    - name: "Email"
+      url: "mailto:deepanshu@example.com"
+      icon: "instagram"
+      username: "deepanshu@example.com"
+
 
   skills:
     - "javaScript"

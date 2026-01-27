@@ -14,6 +14,19 @@ prose{
     @apply px-0 m-0 w-screen;
 }
 
+@font-face {
+  font-family: "Augustina";
+  src: url("../assets//fonts/Agustina.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nametitle {
+    font-family: "Augustina";
+    /* font-size: 1.5rem; */
+
+}
+
 .prose h1,
 .prose h2,
 .prose img {
@@ -149,6 +162,15 @@ prose{
   to {
     background-position: 0% 0%;
         }
+    }
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shiny-text {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shiny-width)) 0;
+        }
+  30%, 60% {
+    background-position: calc(100% + var(--shiny-width)) 0;
+        }
     }}
 
 :root {
@@ -233,5 +255,3 @@ prose{
     animation: none;
     mix-blend-mode: normal;
 }
-
-

@@ -3,14 +3,21 @@
     import {Meteors} from '@/components/ui/meteors'
     import {TypingAnimation} from '@/components/ui/typing-animation';
     import {Image} from 'astro:assets'
-    import meImage from '../assets/me.jpg';
+    import {Badge} from '@/components/ui/badge'
     import {getEntry , getCollection} from 'astro:content'
 
-const profile = await getEntry('profile', 'profile');
+const profilecollection = await getEntry('profile', 'profile');
 // const profileCollection = await getCollection('profile');
 // console.log("data collection "+ profileCollection[0]?.data);
 // const {} = profile;
-console.log("data "+profile?.data);
+const {profile} = profilecollection?.data || {};
+console.log("data "+profilecollection?.data.profile.image);
+const icons = [
+    'github',
+    'linkedin',
+    'twitter',
+]
+const iconsvg = icons.map((icon)=> `https://api.iconify.design/simple-icons:${icon}.svg`);
 ---
 
 <!-- <div class="relative h-[500px] w-full overflow-hidden">
@@ -22,20 +29,29 @@ console.log("data "+profile?.data);
     
     <div class="flex flex-col my-5 flex-2">
 
-        <h1 class="text-4xl font-bold  dark:text-neutral-100" >{profile?.data.profile.greeting}
+        <h1 class="text-4xl font-bold  dark:text-neutral-100" >{profile?.greeting}
             <br> 
-            <AuroraText>{profile?.data.profile.name}</AuroraText>
+            <AuroraText className='nametitle px-6 py-5'>{profile?.name}</AuroraText>
         </h1>
         <h2 class="dark:text-neutral-200">
-            <TypingAnimation client:load  words={profile?.data.profile.roles} loop  />
+            <TypingAnimation client:load  words={profile?.roles} loop  />
         
         </h2>
-        <p class=" text-gray-700 dark:text-gray-300 text-lg">{profile?.data.profile.description}</p>
-        
+        <p class=" text-gray-700 dark:text-gray-300 text-lg">{profile?.description}</p>
+        <div class="flex gap-2">
+            {profile?.social.map((data)=>(
+                <a href={data.url} target="_blank" aria-label={data.username} >
+                <Badge variant={'outline'} className='py-2 px-4 dark:bg-neutral-300'>
+                    <Image src={`https://api.iconify.design/simple-icons:${data.icon}.svg`} alt={data.name} width={25} height={25} />
+                </Badge>
+                </a>
+            )
+            )}
+        </div>
     </div>
     <div id="image" class="flex-1 w-45 h-45 flex justify-center items-center">
-        {profile?.data.profile.image.src && (
-            <Image src={profile.data.profile.image.src} alt="Profile Picture" width={200} height={200} class="rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"/>
+        {profile?.image && (
+            <Image src={profile.image} alt="Profile Picture" width={200} height={200} class="rounded-full bg-gray-400 dark:bg-gray-700 shadow-2xl border-gray-200 dark:border-gray-700 border-2"/>
         )}
     </div>
 </div>
