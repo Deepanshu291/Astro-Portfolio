@@ -5,10 +5,7 @@
 [![Astro](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
-[![Zod](https://img.shields.io/badge/Zod-3068AD?logo=zod&logoColor=white)](https://zod.dev/)
-
-## 🎯 Why This Portfolio?
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
 ## 🎯 Why This Portfolio?
 
@@ -380,33 +377,56 @@ Now that you have your portfolio set up:
 ## 💡 Tips & Best Practices
 
 - **Keep it updated**: Regular updates show you're active
-- **Write blog posts**: Share your knowledge and experiences
-- **Optimize images**: Use WebP format for better performance
-- **SEO matters**: Fill in meta descriptions and titles
-- **Test responsiveness**: Check on different devices
-- **Analytics**: Add Google Analytics to track visitors
+- **Write blog posts** – Share your knowledge and experiences
+- **Optimize images** – Use WebP format for better performance
+- **SEO matters** – Fill in meta descriptions and titles
+- **Test responsiveness** – Check on different devices
+- **Add analytics** – Track visitors with Google Analytics
 
-## 🤝 Contributing
+## 🛠️ Built With
 
-Found a bug or want to add a feature? Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+- [Astro](https://astro.build) - Web framework
+- [React](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Language
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Zod](https://zod.dev/) - Schema validation
+- [Simple Icons](https://simpleicons.org/) - Skill icons
 
 ## 📝 License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Support
+## 🤝 Contributing
 
-If you found this template helpful:
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 💖 Support
+
+If you found this helpful:
 - ⭐ Star the repository
-- 🐦 Share it on social media
-- 🔗 Link back to the original template
+- 🐦 Share on social media
+- 🔗 Link back to this repo
+- 🍕 Buy me a coffee (if you're feeling generous)
+
+## 📧 Contact
+
+**Deepanshu Sharma**
+- GitHub: [@Deepanshu291](https://github.com/Deepanshu291)
+- LinkedIn: [deepanshu291](https://linkedin.com/in/deepanshu291)
+- Email: deepanshu2912001@gmail.com
 
 ---
 
-**Happy coding!** 🚀 If you have any questions or run into issues, feel free to open an issue on GitHub.
+<div align="center">
+
+**Built with ❤️ using Astro**
+
+[⬆ back to top](#-astro-developer-portfolio)
+
+</div>
