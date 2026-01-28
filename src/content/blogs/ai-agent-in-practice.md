@@ -2,7 +2,7 @@
 title: 'AI Agents in Practice: LangGraph vs CrewAI'
 description: 'A practical comparison of LangGraph and CrewAI for building reliable, multi-agent AI systems, with code examples and recommendations.'
 pubDate: 'Jan 28 2026'
-heroImage: 'src/assets/Gemini_Generated_Image.png'
+heroImage: 'src/assets/blogimage/Gemini_Generated_Image.png'
 tags: ['AI','LLM','LangGraph','CrewAI','Agents','Python']
 readtime: '8 min read'
 ---

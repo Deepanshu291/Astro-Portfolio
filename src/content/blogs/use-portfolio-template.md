@@ -1,13 +1,11 @@
 ---
-title: 'How to Install and Use This Portfolio Template'
+title: 'Building Your Developer Portfolio: The Modern Way'
 description: 'A complete guide to setting up and customizing your own portfolio using this Astro-based template'
 pubDate: '2026-01-28'
-heroImage: ''
+heroImage: 'src/assests/blogimage/portfolio.png'
 tags: ['Astro', 'Portfolio', 'Tutorial', 'Guide']
-readtime: '8 min'
+readtime: '10 min'
 ---
-
-# Building Your Developer Portfolio: The Modern Way
 
 Let's face it—as developers, we spend more time optimizing our VS Code setup than building our portfolios. But in 2026, your GitHub profile alone isn't enough. You need a portfolio that's as performant as your code, as sleek as your terminal setup, and actually represents the kind of engineer you are.
 
@@ -15,7 +13,7 @@ That's where this Astro-powered portfolio comes in. No bloated frameworks, no un
 
 ## Why Another Portfolio Template?
 
-**TL;DR:** Because most portfolio templates are slow, overcomplicated, or look like they're stuck in 2015.
+Because most portfolio templates are slow, overcomplicated, or look like they're stuck in 2015.
 
 This isn't just another Bootstrap template with some jQuery animations. We're talking about:
 
