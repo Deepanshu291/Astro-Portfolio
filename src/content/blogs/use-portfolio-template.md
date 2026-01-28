@@ -2,7 +2,7 @@
 title: 'Building Your Developer Portfolio: The Modern Way'
 description: 'A complete guide to setting up and customizing your own portfolio using this Astro-based template'
 pubDate: '2026-01-28'
-heroImage: 'src/assests/blogimage/portfolio.png'
+heroImage: 'src/assets/blogimage/portfolio.png'
 tags: ['Astro', 'Portfolio', 'Tutorial', 'Guide']
 readtime: '10 min'
 ---
