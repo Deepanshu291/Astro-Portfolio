@@ -1,4 +1,3 @@
-```md
 ---
 title: 'AI Agents in Practice: LangGraph vs CrewAI'
 description: 'A practical comparison of LangGraph and CrewAI for building reliable, multi-agent AI systems, with code examples and recommendations.'
@@ -7,7 +6,6 @@ heroImage: 'https://raw.githubusercontent.com/Deepanshu291/Astro-Portfolio/refs/
 tags: ['AI','LLM','LangGraph','CrewAI','Agents','Python']
 readtime: '8 min read'
 ---
-```
 
 Building **AI agents** has quickly moved from toy demos to production-grade systems. Today, agents don’t just answer questions—they **plan**, **delegate**, **coordinate**, and **recover from errors**.
 
@@ -231,10 +229,4 @@ That combo gives you speed *and* safety — and saves you from painful rewrites 
 
 ---
 
-If you want, I can:
 
-* Rewrite this as a **Dev.to / Medium-style post**
-* Add a **real-world architecture diagram (text-based)**
-* Show a **LangGraph + CrewAI hybrid example**
-
-Just say the word 🚀
