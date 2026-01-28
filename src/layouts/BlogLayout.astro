@@ -13,7 +13,7 @@ const { title, description, pubDate, readtime, heroImage, tags } = Astro.props;
 			<a href="/blogs" class="decoration-none mb-20">&larr; Back to blogs</a>
 			<article class="mt-10">
 				<div class="hero-image">
-					<!-- {heroImage && <Image width={1020} height={510} src={heroImage} alt="" />} -->
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
 				<div class=" mx-auto max-w-3xl gap-1 px-4 py-2 sm:py-2 sm:px-2 lg:px-2">
 				
