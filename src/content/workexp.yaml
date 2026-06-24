@@ -41,6 +41,8 @@ experience:
         - "Successfully handled multiple enterprise transition projects"
         - "Built automation solutions to improve process efficiency"
         - "Implemented monitoring and CI/CD pipelines reducing deployment time"
+        - "Automated internal workflows and data pipelines using n8n and Python, reducing manual effort across recurring business processes"
+        - "Designed and deployed multi-modal RAG pipelines and multi-agent systems using LangGraph and Azure AI Foundry, with retrieval evaluation via MLflow/RAGAS"
     
     - company: "Freelance / Startup Projects"
       position: "Full Stack Web Developer"
