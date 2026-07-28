@@ -1,3 +1,11 @@
+---
+title: 'From Hugging Face to GGUF: Building and Running Qwen3 Locally with llama.cpp and Ollama'
+description: 'A hands-on walkthrough of converting a Hugging Face model into GGUF using llama.cpp, quantizing it, and running it locally with Ollama while sharing the challenges faced during the process.'
+pubDate: 'Jul 28 2026'
+heroImage: 'src/assets/blogimage/hf-to-gguf-llama-cpp-ollama.png'
+tags: ['AI', 'LLM', 'GGUF', 'llama.cpp', 'Ollama', 'Qwen3', 'Hugging Face', 'Local AI', 'Python']
+readtime: '10 min read'
+---
 # Building My First GGUF Model with llama.cpp and Running It on Ollama
 
 When I first started learning about running Large Language Models locally, I kept seeing terms like **GGUF**, **llama.cpp**, and **Ollama** everywhere. Most tutorials showed how to download an already-converted GGUF model, but I wanted to understand what actually happens behind the scenes.
