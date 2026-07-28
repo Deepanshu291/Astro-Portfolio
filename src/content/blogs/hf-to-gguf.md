@@ -2,7 +2,7 @@
 title: 'From Hugging Face to GGUF: Building and Running Qwen3 Locally with llama.cpp and Ollama'
 description: 'A hands-on walkthrough of converting a Hugging Face model into GGUF using llama.cpp, quantizing it, and running it locally with Ollama while sharing the challenges faced during the process.'
 pubDate: 'Jul 28 2026'
-heroImage: 'src/assets/blogimage/hf-to-gguf-llama-cpp-ollama.png'
+heroImage: 'src/assets/blogimage/hf-gguf.jfif'
 tags: ['AI', 'LLM', 'GGUF', 'llama.cpp', 'Ollama', 'Qwen3', 'Hugging Face', 'Local AI', 'Python']
 readtime: '10 min read'
 ---
