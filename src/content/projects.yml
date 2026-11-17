@@ -16,6 +16,22 @@ projects:
       - "TypeScript"
       - "React"
 
+  - title: "Bhai CLI"
+    dates: "Mar 2026 - May 2026"
+    sourceUrl: "https://github.com/Deepanshu291/BhaiCli"
+    description: "A Linux AI command-line assistant built with LangGraph. Bhai lets you interact with your system through natural language, execute shell commands, and handle developer tasks using a single command-execution tool. It supports local Ollama models and Groq-hosted models, with human approval for potentially risky commands."
+    imageUrl: "https://avatars.githubusercontent.com/u/10000884?v=4"
+    projectUrl: ""
+    techStack:
+      - "Python"
+      - "LangGraph"
+      - "LangChain"
+      - "Groq"
+      - "Ollama"
+      - "Typer"
+      - "Rich"
+      - "python-dotenv"
+
   - title: "Python Online Compiler (PYONE)"
     dates: "Jan 2023 - Mar 2023"
     sourceUrl: "https://github.com/Deepanshu291/Pyone-Online-Compiler"
