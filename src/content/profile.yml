@@ -1,22 +1,29 @@
 profile:
   name: "Deepanshu Sharma"
-  title: "Backend-focused Full Stack Developer | GenAI & Data Engineer"
+  title: "AI Full Stack Engineer | GenAI & Data Engineer"
   greeting: "Hi, I'm"
-  tagline: "Building scalable backend systems, AI agents, and multimodal RAG solutions."
+  tagline: "Building AI-powered products, intelligent agents, and scalable full-stack systems."
   description: >
-    Backend-focused Full Stack and GenAI Developer with experience building scalable
-    Django and Python backends, REST APIs, AI agents, and multimodal RAG pipelines.
-    Currently working at Tata Consultancy Services on enterprise GenAI solutions using
-    Azure AI Foundry, LangChain, LangGraph, and Terraform. I enjoy designing reliable
-    systems, automating workflows, and delivering production-ready applications.
+    AI-focused Full Stack Engineer with experience building scalable Python and Django backends,
+    REST APIs, modern web applications, AI agents, and multimodal RAG pipelines. Currently working
+    at Tata Consultancy Services on enterprise GenAI and data engineering solutions, using
+    Databricks, Azure AI Foundry, LangChain, LangGraph, and cloud automation. I enjoy connecting
+    reliable backend engineering with practical AI systems to build production-ready products.
   email: "deepanshu2912001@gmail.com"
   location: "Delhi, India"
+
+  # Professional roles
   roles:
+    - "AI Full Stack Engineer"
+    - "GenAI Engineer"
     - "GenAI Data Engineer"
     - "Backend Developer"
     - "Full Stack Developer"
-    - "AI Engineer"
+    - "AI Agent Developer"
+
+  # Profile image
   image: "https://raw.githubusercontent.com/Deepanshu291/Astro-Portfolio/refs/heads/master/src/assets/me.jpg"
+
   social:
     - name: "GitHub"
       url: "https://github.com/Deepanshu291"
@@ -30,39 +37,55 @@ profile:
       url: "mailto:deepanshu2912001@gmail.com"
       icon: "mail"
       username: "deepanshu2912001@gmail.com"
-    - name: "Portfolio"
-      url: "https://deepanshusharma.me"
-      icon: "globe"
-      username: "deepanshusharma.me"
+
   skills:
-    - "python"
+    # Original portfolio skills retained
     - "javaScript"
     - "typeScript"
-    - "java"
-    - "django"
     - "react"
-    - "next.js"
     - "nodedotjs"
-    - "postgresql"
-    - "mongodb"
-    - "langchain"
-    - "langgraph"
-    - "crewai"
-    - "chromadb"
-    - "huggingface"
-    - "azure"
-    - "terraform"
-    - "docker"
-    - "n8n"
-    - "streamlit"
-    - "tailwindcss"
-    - "flutter"
-    - "dart"
+    - "python"
+    - "django"
     - "graphql"
-    - "appwrite"
-    - "firebase"
-    - "cloudflare"
+    - "docker"
+    - "azure"
     - "git"
-    - "githubcopilot"
+    - "postgresql"
     - "html5"
     - "css"
+    - "tailwindcss"
+    - "next.js"
+    - "astro"
+    - "vite"
+    - "mongodb"
+    - "langchain"
+    - "claude"
+    - "chromadb"
+    - "langgraph"
+    - "terraform"
+    - "n8n"
+    - "flutter"
+    - "dart"
+    - "socketdotio"
+    - "firebase"
+    - "appwrite"
+    - "githubcopilot"
+    - "cloudflare"
+    - "streamlit"
+    - "huggingface"
+    - "crewai"
+    - "Java"
+    - "c"
+    - "cplusplus"
+
+    # Additional skills reflected in the current resume and work
+    - "azure-ai-foundry"
+    - "databricks"
+    - "mlflow"
+    - "ragas"
+    - "llamaindex"
+    - "openai"
+    - "vector-search"
+    - "embeddings"
+    - "mcp"
+    - "datadog"
