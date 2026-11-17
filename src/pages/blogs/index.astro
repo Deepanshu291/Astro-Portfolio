@@ -4,7 +4,9 @@ import {BlogCard} from '@/components/ui/blogcard'
 import {getCollection} from 'astro:content';
 
 // const posts = Object.values(import.meta.glob('@/content/blogs/*.md', {eager:true}))
-const posts = await  getCollection('blog');
+const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
 ---
 
