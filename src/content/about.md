@@ -1,11 +1,9 @@
 # About Me
 
-<!-- ## Hey, I'm Deepanshu Sharma -->
+I’m a **Backend-focused Full Stack Developer and GenAI Data Engineer** based in **Delhi, India**. I build scalable backend systems, REST APIs, AI agents, and modern web applications, with a strong focus on Python and Django.
 
-I’m from **Delhi, India**, and I began my journey in **2019**, learning the basics of web development with **HTML** and **CSS**. In **2020**, I started exploring **Flutter**, built several projects, and worked as a **freelancer until 2023**, contributing to startups and interning to share and grow my skills in **React, Next.js, and Full Stack development**.  
+I currently work at **Tata Consultancy Services (TCS)** as a **GenAI Data Engineer**, where I work on enterprise GenAI solutions. My work includes designing **multimodal RAG pipelines** and **multi-agent systems** with **LangGraph** and **Azure AI Foundry**, evaluating retrieval quality with **MLflow and RAGAS**, and automating business workflows with **n8n and Python**. I also work with **Azure DevOps, Terraform, Datadog, and Next.js**.
 
-Since **2023**, I have been deeply exploring **GenAI**, owning projects where I built and **fine-tuned LLMs and SLMs** using **Unsloth, TRL, and SFT techniques**, creating AI-powered tools, agents, and workflows with **LangChain, LangGraph, n8n, OpenAI, ChromaDB, and Streamlit**.  
+Before TCS, I worked on freelance and startup projects, building production-ready applications with **React, Next.js, Django, and PostgreSQL**. I have also developed responsive web and mobile interfaces using React and Flutter.
 
-Currently, at **Tata Consultancy Services (TCS)**, I work with **Azure, Terraform, Azure AI Foundry, and Azure DevOps**, applying these tools daily to design and deploy **scalable AI-driven solutions**.  
-
-I’m passionate about **AI and web technologies**, motivated by challenges, and love building **innovative and impactful applications**. My goal is to continue growing as a **GenAI developer**, exploring the frontiers of AI, and contributing to projects that **inspire, innovate, and make a difference**.
+My technical interests include **agentic AI, retrieval-augmented generation, backend engineering, cloud infrastructure, and developer automation**. I enjoy turning complex requirements into reliable, maintainable software and continuously exploring practical applications of emerging technologies.
